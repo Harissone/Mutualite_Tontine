@@ -1,0 +1,1 @@
+﻿alter table [evenement] add [date_eve] varchar(255) not null;

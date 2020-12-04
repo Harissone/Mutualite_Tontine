@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B951B50B-BEC0-4621-9DF0-A5E21CA7BFE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tontine.WinForm</RootNamespace>
+    <AssemblyName>Tontine.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="For.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="For.Designer.cs">
+      <DependentUpon>For.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvent.Designer.cs">
+      <DependentUpon>FrmEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfoMeettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfoMeettings.Designer.cs">
+      <DependentUpon>FrmInfoMeettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMembre.Designer.cs">
+      <DependentUpon>FrmMembre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMetting.Designer.cs">
+      <DependentUpon>FrmMetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParent.Designer.cs">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignUp.Designer.cs">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MutualiterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MutualiterDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MutualiterDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MutualiterDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MutualiterDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MutualiterDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="For.resx">
+      <DependentUpon>For.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvent.resx">
+      <DependentUpon>FrmEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInfoMeettings.resx">
+      <DependentUpon>FrmInfoMeettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMembre.resx">
+      <DependentUpon>FrmMembre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMetting.resx">
+      <DependentUpon>FrmMetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParent.resx">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignUp.resx">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MutualiterDataSet.xsc">
+      <DependentUpon>MutualiterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet.xss">
+      <DependentUpon>MutualiterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet1.xsc">
+      <DependentUpon>MutualiterDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet1.xss">
+      <DependentUpon>MutualiterDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet2.xsc">
+      <DependentUpon>MutualiterDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet2.xss">
+      <DependentUpon>MutualiterDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet3.xsc">
+      <DependentUpon>MutualiterDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet3.xss">
+      <DependentUpon>MutualiterDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet4.xsc">
+      <DependentUpon>MutualiterDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet4.xss">
+      <DependentUpon>MutualiterDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet5.xsc">
+      <DependentUpon>MutualiterDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet5.xss">
+      <DependentUpon>MutualiterDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osaka-5772121_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashing-165192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine-blanc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cOULEUR-NOIRE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_groups_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_plus_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thursday_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_left_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine-fond-noir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2aa994a3e7de2ecfcf7268bcbc4bf349.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4d6c1255176a8560811107b172c02e1f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8ef12dd656cca1f3f79115d80e0a4e02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39ccf447265573ad7b353fad6e1e50c7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-5719221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine-png-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-tontine-png-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans-titre---4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tontine.BO\Tontine.BO.csproj">
+      <Project>{8D77F872-6F8C-481D-B90A-D3595CA6B134}</Project>
+      <Name>Tontine.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mutualite.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Mutualite_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Mutualite.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\1bdf363f7e7e65b29de18199f98e225b-[Converti].png" />
+    <None Include="Resources\2TCORP.jpg" />
+    <None Include="Resources\home_32px.png" />
+    <None Include="Resources\home_32px1.png" />
+    <None Include="Resources\home_32px2.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
