@@ -346,12 +346,6 @@
     <None Include="Resources\Sans-titre---4.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tontine.BO\Tontine.BO.csproj">
-      <Project>{8D77F872-6F8C-481D-B90A-D3595CA6B134}</Project>
-      <Name>Tontine.BO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Mutualite.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
