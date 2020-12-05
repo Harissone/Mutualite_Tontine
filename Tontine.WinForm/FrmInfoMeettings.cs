@@ -20,7 +20,7 @@ namespace Tontine.WinForm
         private void FrmInfoMeettings_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+            
         }
     }
 }

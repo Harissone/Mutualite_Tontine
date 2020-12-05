@@ -15,6 +15,13 @@ namespace Tontine.WinForm
         public FrmSplashScreen()
         {
             InitializeComponent();
+           
+        }
+
+        private void FrmSplashScreen_Load(object sender, EventArgs e)
+        {
+            Form f = new FrmLogin();
+            f.Show();
         }
     }
 }

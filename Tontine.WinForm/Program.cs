@@ -16,7 +16,7 @@ namespace Tontine.WinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmInfoMeettings());
+            Application.Run(new FrmSplashScreen());
         }
     }
 }
