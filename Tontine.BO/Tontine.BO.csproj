@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Event.cs" />
     <Compile Include="Login.cs" />
+    <Compile Include="Meeting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Member.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

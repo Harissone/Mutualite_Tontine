@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A764D995-1F13-4235-97BB-8402824C8CC7}</ProjectGuid>
+    <ProjectGuid>{46D5F934-0A43-471B-8B59-C0FC3D171EFA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tontine.BLL</RootNamespace>
-    <AssemblyName>Tontine.BLL</AssemblyName>
+    <RootNamespace>Tontine.DAO</RootNamespace>
+    <AssemblyName>Tontine.DAO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,24 +52,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventBLO.cs" />
-    <Compile Include="MeetingBLO.cs" />
-    <Compile Include="MemberBLO.cs" />
+    <Compile Include="EventDAO.cs" />
+    <Compile Include="MeetingDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserBLO.cs" />
+    <Compile Include="MemberDAO.cs" />
+    <Compile Include="UserDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tontine.BO\Tontine.BO.csproj">
-      <Project>{8D77F872-6F8C-481D-B90A-D3595CA6B134}</Project>
+      <Project>{8d77f872-6f8c-481d-b90a-d3595ca6b134}</Project>
       <Name>Tontine.BO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tontine.DAL\Tontine.DAL.csproj">
-      <Project>{46d5f934-0a43-471b-8b59-c0fc3d171efa}</Project>
-      <Name>Tontine.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
