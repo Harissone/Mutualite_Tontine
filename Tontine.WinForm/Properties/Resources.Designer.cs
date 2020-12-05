@@ -173,6 +173,16 @@ namespace Tontine.WinForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap help_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("help_24px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_32px {
             get {
                 object obj = ResourceManager.GetObject("home_32px", resourceCulture);
@@ -283,6 +293,16 @@ namespace Tontine.WinForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout_rounded_left_30px1 {
+            get {
+                object obj = ResourceManager.GetObject("logout_rounded_left_30px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap osaka_5772121_1920 {
             get {
                 object obj = ResourceManager.GetObject("osaka-5772121_1920", resourceCulture);
@@ -306,6 +326,16 @@ namespace Tontine.WinForm.Properties {
         internal static System.Drawing.Bitmap services_48px {
             get {
                 object obj = ResourceManager.GetObject("services_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap services_48px1 {
+            get {
+                object obj = ResourceManager.GetObject("services_48px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +373,29 @@ namespace Tontine.WinForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap thursday_26px1 {
+            get {
+                object obj = ResourceManager.GetObject("thursday_26px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_groups_50px {
             get {
                 object obj = ResourceManager.GetObject("user_groups_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_groups_50px1 {
+            get {
+                object obj = ResourceManager.GetObject("user_groups_50px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

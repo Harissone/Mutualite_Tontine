@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.txtIdentifier = new System.Windows.Forms.TextBox();
+            this.evenementBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mutualiterDataSet4 = new Tontine.WinForm.MutualiterDataSet4();
             this.lblIdentifier = new System.Windows.Forms.Label();
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.lblLocation = new System.Windows.Forms.Label();
@@ -42,14 +44,12 @@
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.mutualiterDataSet4 = new Tontine.WinForm.MutualiterDataSet4();
-            this.evenementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.evenementTableAdapter = new Tontine.WinForm.MutualiterDataSet4TableAdapters.EvenementTableAdapter();
             this.txtDateEvenement = new System.Windows.Forms.TextBox();
             this.lblDateEvenement = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.evenementBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtIdentifier
@@ -62,6 +62,16 @@
             this.txtIdentifier.Name = "txtIdentifier";
             this.txtIdentifier.Size = new System.Drawing.Size(184, 20);
             this.txtIdentifier.TabIndex = 0;
+            // 
+            // evenementBindingSource
+            // 
+            this.evenementBindingSource.DataMember = "Evenement";
+            this.evenementBindingSource.DataSource = this.mutualiterDataSet4;
+            // 
+            // mutualiterDataSet4
+            // 
+            this.mutualiterDataSet4.DataSetName = "MutualiterDataSet4";
+            this.mutualiterDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblIdentifier
             // 
@@ -198,16 +208,6 @@
             this.bindingSource1.DataSource = this.mutualiterDataSet4;
             this.bindingSource1.Position = 0;
             // 
-            // mutualiterDataSet4
-            // 
-            this.mutualiterDataSet4.DataSetName = "MutualiterDataSet4";
-            this.mutualiterDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // evenementBindingSource
-            // 
-            this.evenementBindingSource.DataMember = "Evenement";
-            this.evenementBindingSource.DataSource = this.mutualiterDataSet4;
-            // 
             // evenementTableAdapter
             // 
             this.evenementTableAdapter.ClearBeforeFill = true;
@@ -240,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(768, 325);
+            this.ClientSize = new System.Drawing.Size(510, 325);
             this.Controls.Add(this.txtDateEvenement);
             this.Controls.Add(this.lblDateEvenement);
             this.Controls.Add(this.btnCreate);
@@ -258,9 +258,9 @@
             this.Name = "FrmEvent";
             this.Text = "FrmEvent";
             this.Load += new System.EventHandler(this.FrmEvent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.evenementBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSettingMenu = new System.Windows.Forms.Panel();
             this.btnAboutApp = new System.Windows.Forms.Button();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnAppSetting = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnHelp = new System.Windows.Forms.Button();
             this.panelEventMenu = new System.Windows.Forms.Panel();
             this.btnInfosEvent = new System.Windows.Forms.Button();
             this.btnCreateEvent = new System.Windows.Forms.Button();
-            this.btnEvent = new System.Windows.Forms.Button();
             this.panelMettingMenu = new System.Windows.Forms.Panel();
             this.btnInfoMetting = new System.Windows.Forms.Button();
             this.btnCreateMetting = new System.Windows.Forms.Button();
-            this.btnMetting = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnEvent = new System.Windows.Forms.Button();
+            this.btnMetting = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSettingMenu.SuspendLayout();
             this.panelEventMenu.SuspendLayout();
             this.panelMettingMenu.SuspendLayout();
             this.panelChild.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -75,33 +75,6 @@
             this.panelMenu.Size = new System.Drawing.Size(233, 643);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnExit
-            // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(0, 615);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(216, 34);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::Tontine.WinForm.Properties.Resources.logo_tontine_png_png;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 398);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 217);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelSettingMenu
             // 
             this.panelSettingMenu.BackColor = System.Drawing.Color.DimGray;
@@ -109,7 +82,7 @@
             this.panelSettingMenu.Controls.Add(this.btnProfil);
             this.panelSettingMenu.Controls.Add(this.btnAppSetting);
             this.panelSettingMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSettingMenu.Location = new System.Drawing.Point(0, 283);
+            this.panelSettingMenu.Location = new System.Drawing.Point(0, 405);
             this.panelSettingMenu.Name = "panelSettingMenu";
             this.panelSettingMenu.Size = new System.Drawing.Size(216, 115);
             this.panelSettingMenu.TabIndex = 8;
@@ -119,6 +92,7 @@
             this.btnAboutApp.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAboutApp.FlatAppearance.BorderSize = 0;
             this.btnAboutApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAboutApp.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutApp.ForeColor = System.Drawing.Color.White;
             this.btnAboutApp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAboutApp.Location = new System.Drawing.Point(0, 68);
@@ -136,6 +110,7 @@
             this.btnProfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfil.FlatAppearance.BorderSize = 0;
             this.btnProfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfil.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfil.ForeColor = System.Drawing.Color.White;
             this.btnProfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfil.Location = new System.Drawing.Point(0, 34);
@@ -153,6 +128,7 @@
             this.btnAppSetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAppSetting.FlatAppearance.BorderSize = 0;
             this.btnAppSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAppSetting.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppSetting.ForeColor = System.Drawing.Color.White;
             this.btnAppSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAppSetting.Location = new System.Drawing.Point(0, 0);
@@ -165,45 +141,13 @@
             this.btnAppSetting.UseVisualStyleBackColor = true;
             this.btnAppSetting.Click += new System.EventHandler(this.btnAppSetting_Click);
             // 
-            // btnSettings
-            // 
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(0, 249);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSettings.Size = new System.Drawing.Size(216, 34);
-            this.btnSettings.TabIndex = 7;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.ForeColor = System.Drawing.Color.White;
-            this.btnHelp.Location = new System.Drawing.Point(0, 215);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnHelp.Size = new System.Drawing.Size(216, 34);
-            this.btnHelp.TabIndex = 6;
-            this.btnHelp.Text = "Help";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.UseVisualStyleBackColor = false;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
             // panelEventMenu
             // 
             this.panelEventMenu.BackColor = System.Drawing.Color.DimGray;
             this.panelEventMenu.Controls.Add(this.btnInfosEvent);
             this.panelEventMenu.Controls.Add(this.btnCreateEvent);
             this.panelEventMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelEventMenu.Location = new System.Drawing.Point(0, 141);
+            this.panelEventMenu.Location = new System.Drawing.Point(0, 201);
             this.panelEventMenu.Name = "panelEventMenu";
             this.panelEventMenu.Size = new System.Drawing.Size(216, 74);
             this.panelEventMenu.TabIndex = 5;
@@ -213,6 +157,7 @@
             this.btnInfosEvent.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInfosEvent.FlatAppearance.BorderSize = 0;
             this.btnInfosEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfosEvent.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfosEvent.ForeColor = System.Drawing.Color.White;
             this.btnInfosEvent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfosEvent.Location = new System.Drawing.Point(0, 34);
@@ -230,6 +175,7 @@
             this.btnCreateEvent.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCreateEvent.FlatAppearance.BorderSize = 0;
             this.btnCreateEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateEvent.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateEvent.ForeColor = System.Drawing.Color.White;
             this.btnCreateEvent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateEvent.Location = new System.Drawing.Point(0, 0);
@@ -242,29 +188,13 @@
             this.btnCreateEvent.UseVisualStyleBackColor = true;
             this.btnCreateEvent.Click += new System.EventHandler(this.btnCreateEvent_Click);
             // 
-            // btnEvent
-            // 
-            this.btnEvent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEvent.FlatAppearance.BorderSize = 0;
-            this.btnEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvent.ForeColor = System.Drawing.Color.White;
-            this.btnEvent.Location = new System.Drawing.Point(0, 107);
-            this.btnEvent.Name = "btnEvent";
-            this.btnEvent.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEvent.Size = new System.Drawing.Size(216, 34);
-            this.btnEvent.TabIndex = 4;
-            this.btnEvent.Text = "Event";
-            this.btnEvent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEvent.UseVisualStyleBackColor = true;
-            this.btnEvent.Click += new System.EventHandler(this.btnEvent_Click);
-            // 
             // panelMettingMenu
             // 
             this.panelMettingMenu.BackColor = System.Drawing.Color.DimGray;
             this.panelMettingMenu.Controls.Add(this.btnInfoMetting);
             this.panelMettingMenu.Controls.Add(this.btnCreateMetting);
             this.panelMettingMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMettingMenu.Location = new System.Drawing.Point(0, 28);
+            this.panelMettingMenu.Location = new System.Drawing.Point(0, 60);
             this.panelMettingMenu.Name = "panelMettingMenu";
             this.panelMettingMenu.Size = new System.Drawing.Size(216, 79);
             this.panelMettingMenu.TabIndex = 3;
@@ -274,6 +204,7 @@
             this.btnInfoMetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInfoMetting.FlatAppearance.BorderSize = 0;
             this.btnInfoMetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoMetting.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfoMetting.ForeColor = System.Drawing.Color.White;
             this.btnInfoMetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfoMetting.Location = new System.Drawing.Point(0, 34);
@@ -291,6 +222,7 @@
             this.btnCreateMetting.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCreateMetting.FlatAppearance.BorderSize = 0;
             this.btnCreateMetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateMetting.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateMetting.ForeColor = System.Drawing.Color.White;
             this.btnCreateMetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateMetting.Location = new System.Drawing.Point(0, 0);
@@ -302,22 +234,6 @@
             this.btnCreateMetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateMetting.UseVisualStyleBackColor = true;
             this.btnCreateMetting.Click += new System.EventHandler(this.btnCreateMetting_Click_1);
-            // 
-            // btnMetting
-            // 
-            this.btnMetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMetting.FlatAppearance.BorderSize = 0;
-            this.btnMetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMetting.ForeColor = System.Drawing.Color.White;
-            this.btnMetting.Location = new System.Drawing.Point(0, 0);
-            this.btnMetting.Name = "btnMetting";
-            this.btnMetting.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMetting.Size = new System.Drawing.Size(216, 28);
-            this.btnMetting.TabIndex = 1;
-            this.btnMetting.Text = "Metting";
-            this.btnMetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMetting.UseVisualStyleBackColor = true;
-            this.btnMetting.Click += new System.EventHandler(this.btnMetting_Click);
             // 
             // panelChild
             // 
@@ -340,6 +256,107 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::Tontine.WinForm.Properties.Resources.logout_rounded_left_30px1;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 737);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(216, 54);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::Tontine.WinForm.Properties.Resources.logo_tontine_png_png;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 520);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(216, 217);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Image = global::Tontine.WinForm.Properties.Resources.services_48px1;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 337);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSettings.Size = new System.Drawing.Size(216, 68);
+            this.btnSettings.TabIndex = 7;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Image = global::Tontine.WinForm.Properties.Resources.help_24px1;
+            this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.Location = new System.Drawing.Point(0, 275);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnHelp.Size = new System.Drawing.Size(216, 62);
+            this.btnHelp.TabIndex = 6;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnEvent
+            // 
+            this.btnEvent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEvent.FlatAppearance.BorderSize = 0;
+            this.btnEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEvent.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvent.ForeColor = System.Drawing.Color.White;
+            this.btnEvent.Image = global::Tontine.WinForm.Properties.Resources.thursday_26px1;
+            this.btnEvent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEvent.Location = new System.Drawing.Point(0, 139);
+            this.btnEvent.Name = "btnEvent";
+            this.btnEvent.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnEvent.Size = new System.Drawing.Size(216, 62);
+            this.btnEvent.TabIndex = 4;
+            this.btnEvent.Text = "Event";
+            this.btnEvent.UseVisualStyleBackColor = true;
+            this.btnEvent.Click += new System.EventHandler(this.btnEvent_Click);
+            // 
+            // btnMetting
+            // 
+            this.btnMetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMetting.FlatAppearance.BorderSize = 0;
+            this.btnMetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMetting.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMetting.ForeColor = System.Drawing.Color.White;
+            this.btnMetting.Image = global::Tontine.WinForm.Properties.Resources.user_groups_50px1;
+            this.btnMetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMetting.Location = new System.Drawing.Point(0, 0);
+            this.btnMetting.Name = "btnMetting";
+            this.btnMetting.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMetting.Size = new System.Drawing.Size(216, 60);
+            this.btnMetting.TabIndex = 1;
+            this.btnMetting.Text = "Metting";
+            this.btnMetting.UseVisualStyleBackColor = true;
+            this.btnMetting.Click += new System.EventHandler(this.btnMetting_Click);
+            // 
             // FrmParent
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -352,12 +369,12 @@
             this.Text = "FrmParent";
             this.Load += new System.EventHandler(this.FrmParent_Load);
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSettingMenu.ResumeLayout(false);
             this.panelEventMenu.ResumeLayout(false);
             this.panelMettingMenu.ResumeLayout(false);
             this.panelChild.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -380,8 +397,8 @@
         private System.Windows.Forms.Panel panelMettingMenu;
         private System.Windows.Forms.Button btnInfoMetting;
         private System.Windows.Forms.Button btnCreateMetting;
-        private System.Windows.Forms.Button btnMetting;
         private System.Windows.Forms.Panel panelChild;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnMetting;
     }
 }

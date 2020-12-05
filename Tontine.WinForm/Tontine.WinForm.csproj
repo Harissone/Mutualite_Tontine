@@ -168,6 +168,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MutualiterDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MutualiterDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MutualiterDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -274,6 +279,17 @@
     <None Include="MutualiterDataSet5.xss">
       <DependentUpon>MutualiterDataSet5.xsd</DependentUpon>
     </None>
+    <None Include="MutualiterDataSet6.xsc">
+      <DependentUpon>MutualiterDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MutualiterDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MutualiterDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MutualiterDataSet6.xss">
+      <DependentUpon>MutualiterDataSet6.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -371,6 +387,11 @@
     <None Include="Resources\home_32px1.png" />
     <None Include="Resources\home_32px2.png" />
     <None Include="Resources\abstract-57192211.jpg" />
+    <None Include="Resources\user_groups_50px1.png" />
+    <None Include="Resources\thursday_26px1.png" />
+    <None Include="Resources\help_24px1.png" />
+    <None Include="Resources\services_48px1.png" />
+    <None Include="Resources\logout_rounded_left_30px1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

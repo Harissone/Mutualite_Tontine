@@ -75,6 +75,7 @@ namespace Tontine.WinForm
 
         private void btnInfoMetting_Click(object sender, EventArgs e)
         {
+            openChildForm(new FrmInfoMeettings());
             hideSubMenu();
         }
 

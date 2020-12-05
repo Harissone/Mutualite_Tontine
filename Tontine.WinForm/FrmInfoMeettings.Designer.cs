@@ -51,9 +51,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idreunDataGridViewTextBoxColumn,
@@ -63,9 +66,13 @@
             this.descriptionDataGridViewTextBoxColumn,
             this.datereunDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.reunionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 67);
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(504, 307);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(753, 307);
             this.dataGridView1.TabIndex = 0;
             // 
             // lblMeetingList
@@ -73,7 +80,7 @@
             this.lblMeetingList.AutoSize = true;
             this.lblMeetingList.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMeetingList.ForeColor = System.Drawing.Color.White;
-            this.lblMeetingList.Location = new System.Drawing.Point(32, 36);
+            this.lblMeetingList.Location = new System.Drawing.Point(12, 36);
             this.lblMeetingList.Name = "lblMeetingList";
             this.lblMeetingList.Size = new System.Drawing.Size(95, 19);
             this.lblMeetingList.TabIndex = 5;
@@ -98,44 +105,52 @@
             this.idreunDataGridViewTextBoxColumn.DataPropertyName = "id_reun";
             this.idreunDataGridViewTextBoxColumn.HeaderText = "id_reun";
             this.idreunDataGridViewTextBoxColumn.Name = "idreunDataGridViewTextBoxColumn";
+            this.idreunDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nomreunDataGridViewTextBoxColumn
             // 
             this.nomreunDataGridViewTextBoxColumn.DataPropertyName = "nom_reun";
             this.nomreunDataGridViewTextBoxColumn.HeaderText = "nom_reun";
             this.nomreunDataGridViewTextBoxColumn.Name = "nomreunDataGridViewTextBoxColumn";
+            this.nomreunDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tauxcolDataGridViewTextBoxColumn
             // 
             this.tauxcolDataGridViewTextBoxColumn.DataPropertyName = "taux_col";
             this.tauxcolDataGridViewTextBoxColumn.HeaderText = "taux_col";
             this.tauxcolDataGridViewTextBoxColumn.Name = "tauxcolDataGridViewTextBoxColumn";
+            this.tauxcolDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nbrememDataGridViewTextBoxColumn
             // 
             this.nbrememDataGridViewTextBoxColumn.DataPropertyName = "nbre_mem";
             this.nbrememDataGridViewTextBoxColumn.HeaderText = "nbre_mem";
             this.nbrememDataGridViewTextBoxColumn.Name = "nbrememDataGridViewTextBoxColumn";
+            this.nbrememDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // descriptionDataGridViewTextBoxColumn
             // 
             this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
             this.descriptionDataGridViewTextBoxColumn.HeaderText = "description";
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // datereunDataGridViewTextBoxColumn
             // 
             this.datereunDataGridViewTextBoxColumn.DataPropertyName = "date_reun";
             this.datereunDataGridViewTextBoxColumn.HeaderText = "date_reun";
             this.datereunDataGridViewTextBoxColumn.Name = "datereunDataGridViewTextBoxColumn";
+            this.datereunDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // btnNewMeeting
             // 
+            this.btnNewMeeting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewMeeting.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewMeeting.ForeColor = System.Drawing.Color.SpringGreen;
-            this.btnNewMeeting.Location = new System.Drawing.Point(573, 67);
+            this.btnNewMeeting.Location = new System.Drawing.Point(786, 67);
             this.btnNewMeeting.Name = "btnNewMeeting";
-            this.btnNewMeeting.Size = new System.Drawing.Size(90, 36);
+            this.btnNewMeeting.Size = new System.Drawing.Size(90, 32);
             this.btnNewMeeting.TabIndex = 6;
             this.btnNewMeeting.Text = "New meeting";
             this.btnNewMeeting.UseVisualStyleBackColor = true;
@@ -143,12 +158,14 @@
             // 
             // btnEditMeeting
             // 
+            this.btnEditMeeting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditMeeting.BackColor = System.Drawing.Color.DimGray;
             this.btnEditMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditMeeting.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditMeeting.ForeColor = System.Drawing.Color.DeepPink;
-            this.btnEditMeeting.Location = new System.Drawing.Point(573, 132);
+            this.btnEditMeeting.Location = new System.Drawing.Point(786, 132);
             this.btnEditMeeting.Name = "btnEditMeeting";
-            this.btnEditMeeting.Size = new System.Drawing.Size(90, 36);
+            this.btnEditMeeting.Size = new System.Drawing.Size(90, 31);
             this.btnEditMeeting.TabIndex = 7;
             this.btnEditMeeting.Text = "Edit meeting";
             this.btnEditMeeting.UseVisualStyleBackColor = false;
@@ -156,32 +173,38 @@
             // 
             // btnDeleteMeeting
             // 
+            this.btnDeleteMeeting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteMeeting.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteMeeting.ForeColor = System.Drawing.Color.Yellow;
-            this.btnDeleteMeeting.Location = new System.Drawing.Point(573, 203);
+            this.btnDeleteMeeting.Location = new System.Drawing.Point(786, 196);
             this.btnDeleteMeeting.Name = "btnDeleteMeeting";
-            this.btnDeleteMeeting.Size = new System.Drawing.Size(90, 36);
+            this.btnDeleteMeeting.Size = new System.Drawing.Size(90, 31);
             this.btnDeleteMeeting.TabIndex = 8;
             this.btnDeleteMeeting.Text = "Delete meeting";
             this.btnDeleteMeeting.UseVisualStyleBackColor = true;
+            this.btnDeleteMeeting.Click += new System.EventHandler(this.btnDeleteMeeting_Click);
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Red;
-            this.btnExit.Location = new System.Drawing.Point(573, 338);
+            this.btnExit.Location = new System.Drawing.Point(786, 340);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 36);
+            this.btnExit.Size = new System.Drawing.Size(90, 34);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmInfoMeettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(690, 393);
+            this.ClientSize = new System.Drawing.Size(888, 393);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDeleteMeeting);
             this.Controls.Add(this.btnEditMeeting);

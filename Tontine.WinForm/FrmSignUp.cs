@@ -27,19 +27,20 @@ namespace Tontine.WinForm
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-           if(string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtPassword.Text) && string.IsNullOrEmpty(txtConfirmPassword.Text))
+            try
             {
-                MessageBox.Show(
-                   "Can't register empty informations",
-                   "Error",
-                   MessageBoxButtons.OK,
-                   MessageBoxIcon.Error
-                   );
-            }
-            else
-            {
-                try
+                if (string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtPassword.Text) && string.IsNullOrEmpty(txtConfirmPassword.Text))
                 {
+                    MessageBox.Show(
+                       "Can't register empty informations",
+                       "Error",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Error
+                       );
+                }
+                else
+                {
+
                     if (txtPassword.Text != txtConfirmPassword.Text)
                     {
 
@@ -71,17 +72,18 @@ namespace Tontine.WinForm
                         this.Hide();
                     }
                 }
-                catch
-                {
-                    MessageBox.Show
-                    (
-                            "Account already exists !",
-                            "Error",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Error
-                    );
-                }
             }
+            catch
+            {
+                MessageBox.Show(
+                       "Account already exist",
+                       "Error",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Error
+                       );
+            }
+
+           
             
             
            /* User user = new User

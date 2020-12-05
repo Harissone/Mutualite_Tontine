@@ -15,6 +15,7 @@ namespace Tontine.WinForm
         public FrmSplashScreen()
         {
             InitializeComponent();
+            progressBar1.Visible = false;
            
         }
 
@@ -29,6 +30,11 @@ namespace Tontine.WinForm
                 f.Show();
                 this.Hide();
             }
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

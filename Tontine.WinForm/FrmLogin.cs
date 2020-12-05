@@ -30,27 +30,40 @@ namespace Tontine.WinForm
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var logi = Login(txtUsername.Text.Trim(), txtPassword.Text.Trim());
-            if(logi == true)
+            if (string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtPassword.Text))
             {
-                Form f = new FrmParent();
-                f.Show();
-                this.Hide();
-                
+                MessageBox.Show(
+                  "Field can't be empty",
+                  "Error",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Error
+                  );
             }
             else
             {
-                MessageBox.Show
-               (
-                       "Account is not exists !",
-                       "Error",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Error
-               );
-                txtUsername.Clear();
-                txtPassword.Clear();
-                this.Hide();
-            }                     
+                var logi = Login(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                if (logi == true)
+                {
+                    Form f = new FrmParent();
+                    f.Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show
+                   (
+                           "Account is not exists !",
+                           "Error",
+                           MessageBoxButtons.OK,
+                           MessageBoxIcon.Error
+                   );
+                    txtUsername.Clear();
+                    txtPassword.Clear();
+                    
+                }
+            }
+                     
         }
         public bool Login(string user, string password)
         {
@@ -79,6 +92,11 @@ namespace Tontine.WinForm
             // TODO: This line of code loads data into the 'mutualiterDataSet1.User' table. You can move, or remove it, as needed.
             this.userTableAdapter1.Fill(this.mutualiterDataSet1.User);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -39,24 +39,24 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.checkBoxRemember = new System.Windows.Forms.CheckBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.mutualiterDataSet1 = new Tontine.WinForm.MutualiterDataSet1();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.mutualiterDataSet1 = new Tontine.WinForm.MutualiterDataSet1();
             this.mutualiterDataSet = new Tontine.WinForm.MutualiterDataSet();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userTableAdapter = new Tontine.WinForm.MutualiterDataSetTableAdapters.UserTableAdapter();
-            this.userBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.userTableAdapter1 = new Tontine.WinForm.MutualiterDataSet1TableAdapters.UserTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -179,11 +179,22 @@
             // txtPassword
             // 
             this.txtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.userBindingSource1, "password", true));
-            this.txtPassword.Location = new System.Drawing.Point(37, 273);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(37, 269);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(260, 20);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(260, 24);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // userBindingSource1
+            // 
+            this.userBindingSource1.DataMember = "User";
+            this.userBindingSource1.DataSource = this.mutualiterDataSet1;
+            // 
+            // mutualiterDataSet1
+            // 
+            this.mutualiterDataSet1.DataSetName = "MutualiterDataSet1";
+            this.mutualiterDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblPassword
             // 
@@ -198,9 +209,10 @@
             // txtUsername
             // 
             this.txtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.userBindingSource1, "username", true));
-            this.txtUsername.Location = new System.Drawing.Point(37, 205);
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(37, 202);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(260, 20);
+            this.txtUsername.Size = new System.Drawing.Size(260, 24);
             this.txtUsername.TabIndex = 0;
             // 
             // pictureBox1
@@ -222,11 +234,6 @@
             this.bindingSource1.DataSource = this.mutualiterDataSet1;
             this.bindingSource1.Position = 0;
             // 
-            // mutualiterDataSet1
-            // 
-            this.mutualiterDataSet1.DataSetName = "MutualiterDataSet1";
-            this.mutualiterDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // mutualiterDataSet
             // 
             this.mutualiterDataSet.DataSetName = "MutualiterDataSet";
@@ -240,11 +247,6 @@
             // userTableAdapter
             // 
             this.userTableAdapter.ClearBeforeFill = true;
-            // 
-            // userBindingSource1
-            // 
-            this.userBindingSource1.DataMember = "User";
-            this.userBindingSource1.DataSource = this.mutualiterDataSet1;
             // 
             // userTableAdapter1
             // 
@@ -264,12 +266,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

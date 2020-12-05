@@ -29,13 +29,26 @@ namespace Tontine.WinForm
         {
             Form f = new FrmMetting();
             f.Show();
+            this.ValidateChildren();
             this.Hide();
         }
 
         private void btnEditMeeting_Click(object sender, EventArgs e)
         {
+
+           reunionBindingSource.EndEdit();
+           this.reunionTableAdapter.Update(this.mutualiterDataSet3.Reunion); 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnDeleteMeeting_Click(object sender, EventArgs e)
+        {
             reunionBindingSource.EndEdit();
-            this.reunionTableAdapter.Update(dataGridView1.);
+          // this.reunionTableAdapter.Delete(this.mutualiterDataSet3.Reunion);
         }
     }
 }
