@@ -29,17 +29,7 @@ namespace Tontine.WinForm
         {
             try
             {
-                if (string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtPassword.Text) && string.IsNullOrEmpty(txtConfirmPassword.Text))
-                {
-                    MessageBox.Show(
-                       "Can't register empty informations",
-                       "Error",
-                       MessageBoxButtons.OK,
-                       MessageBoxIcon.Error
-                       );
-                }
-                else
-                {
+               
 
                     if (txtPassword.Text != txtConfirmPassword.Text)
                     {
@@ -52,7 +42,7 @@ namespace Tontine.WinForm
                         );
 
                     }
-                    else
+                    else if(txtPassword.Text == txtConfirmPassword.Text)
                     {
                         do
                         {
@@ -71,7 +61,7 @@ namespace Tontine.WinForm
                         f.Show();
                         this.Hide();
                     }
-                }
+                
             }
             catch
             {
