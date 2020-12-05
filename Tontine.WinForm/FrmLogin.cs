@@ -25,6 +25,7 @@ namespace Tontine.WinForm
         {
             Form f = new FrmSignUp();
             f.Show();
+            this.Hide();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace Tontine.WinForm
                );
                 txtUsername.Clear();
                 txtPassword.Clear();
+                this.Hide();
             }                     
         }
         public bool Login(string user, string password)

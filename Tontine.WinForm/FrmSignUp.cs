@@ -27,50 +27,62 @@ namespace Tontine.WinForm
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-           
-            try
+           if(string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtPassword.Text) && string.IsNullOrEmpty(txtConfirmPassword.Text))
             {
-                if (txtPassword.Text != txtConfirmPassword.Text)
-                {
-
-                    MessageBox.Show(
-                    "Please confirm your password",
-                    "Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                    );
-
-                }
-                else
-                {
-                    do
-                    {
-                        userBindingSource.EndEdit();
-                        this.userTableAdapter.Insert(txtUsername.Text, txtPassword.Text, txtConfirmPassword.Text);
-                    }
-                    while (txtPassword.Text == txtConfirmPassword.Text);
-
-                    MessageBox.Show(
-                   "Your account has been created successfully",
-                   "Confirmation",
+                MessageBox.Show(
+                   "Can't register empty informations",
+                   "Error",
                    MessageBoxButtons.OK,
-                   MessageBoxIcon.Information
+                   MessageBoxIcon.Error
                    );
-                    Form f = new FrmParent();
-                    f.Show();
-                    this.Hide();
-                }
             }
-            catch
+            else
             {
-                MessageBox.Show
-                (
-                        "Account already exists !",
+                try
+                {
+                    if (txtPassword.Text != txtConfirmPassword.Text)
+                    {
+
+                        MessageBox.Show(
+                        "Please confirm your password",
                         "Error",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
-                );
+                        );
+
+                    }
+                    else
+                    {
+                        do
+                        {
+                            userBindingSource.EndEdit();
+                            this.userTableAdapter.Insert(txtUsername.Text, txtPassword.Text, txtConfirmPassword.Text);
+                        }
+                        while (txtPassword.Text == txtConfirmPassword.Text);
+
+                        MessageBox.Show(
+                       "Your account has been created successfully",
+                       "Confirmation",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Information
+                       );
+                        Form f = new FrmParent();
+                        f.Show();
+                        this.Hide();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show
+                    (
+                            "Account already exists !",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                    );
+                }
             }
+            
             
            /* User user = new User
             (
@@ -97,7 +109,8 @@ namespace Tontine.WinForm
             txtUsername.Clear();
             txtPassword.Clear();
             txtConfirmPassword.Clear();
-            txtUsername.Focus();      
+            txtUsername.Focus();
+            
         }
 
         private void FrmSignUp_Load(object sender, EventArgs e)

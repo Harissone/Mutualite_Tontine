@@ -20,8 +20,15 @@ namespace Tontine.WinForm
 
         private void FrmSplashScreen_Load(object sender, EventArgs e)
         {
-            Form f = new FrmLogin();
-            f.Show();
+            timer1.Enabled = true;
+            progressBar1.Increment(25);
+            if(progressBar1.Value == 100)
+            {
+                timer1.Enabled = false;
+                Form f = new FrmLogin();
+                f.Show();
+                this.Hide();
+            }
         }
     }
 }

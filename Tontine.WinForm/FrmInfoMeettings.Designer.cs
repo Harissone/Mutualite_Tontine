@@ -28,130 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInfoMeeting = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblMeetingList = new System.Windows.Forms.Label();
+            this.mutualiterDataSet3 = new Tontine.WinForm.MutualiterDataSet3();
+            this.reunionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reunionTableAdapter = new Tontine.WinForm.MutualiterDataSet3TableAdapters.ReunionTableAdapter();
+            this.idreunDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomreunDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tauxcolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nbrememDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datereunDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnNewMeeting = new System.Windows.Forms.Button();
+            this.btnEditMeeting = new System.Windows.Forms.Button();
+            this.btnDeleteMeeting = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reunionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnInfoMeeting
+            // dataGridView1
             // 
-            this.btnInfoMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoMeeting.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoMeeting.ForeColor = System.Drawing.Color.White;
-            this.btnInfoMeeting.Image = global::Tontine.WinForm.Properties.Resources.home_32px2;
-            this.btnInfoMeeting.Location = new System.Drawing.Point(36, 38);
-            this.btnInfoMeeting.Name = "btnInfoMeeting";
-            this.btnInfoMeeting.Size = new System.Drawing.Size(117, 95);
-            this.btnInfoMeeting.TabIndex = 0;
-            this.btnInfoMeeting.Text = "Infos meeting";
-            this.btnInfoMeeting.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInfoMeeting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnInfoMeeting.UseVisualStyleBackColor = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idreunDataGridViewTextBoxColumn,
+            this.nomreunDataGridViewTextBoxColumn,
+            this.tauxcolDataGridViewTextBoxColumn,
+            this.nbrememDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn,
+            this.datereunDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.reunionBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(36, 67);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(504, 307);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // lblMeetingList
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Tontine.WinForm.Properties.Resources.home_32px2;
-            this.button1.Location = new System.Drawing.Point(201, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 95);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Infos meeting";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblMeetingList.AutoSize = true;
+            this.lblMeetingList.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMeetingList.ForeColor = System.Drawing.Color.White;
+            this.lblMeetingList.Location = new System.Drawing.Point(32, 36);
+            this.lblMeetingList.Name = "lblMeetingList";
+            this.lblMeetingList.Size = new System.Drawing.Size(95, 19);
+            this.lblMeetingList.TabIndex = 5;
+            this.lblMeetingList.Text = "Meeting list";
             // 
-            // button2
+            // mutualiterDataSet3
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Tontine.WinForm.Properties.Resources.home_32px2;
-            this.button2.Location = new System.Drawing.Point(366, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 95);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Infos meeting";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.mutualiterDataSet3.DataSetName = "MutualiterDataSet3";
+            this.mutualiterDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button3
+            // reunionBindingSource
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Tontine.WinForm.Properties.Resources.home_32px2;
-            this.button3.Location = new System.Drawing.Point(532, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 95);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Infos meeting";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.reunionBindingSource.DataMember = "Reunion";
+            this.reunionBindingSource.DataSource = this.mutualiterDataSet3;
             // 
-            // button4
+            // reunionTableAdapter
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Tontine.WinForm.Properties.Resources.home_32px2;
-            this.button4.Location = new System.Drawing.Point(36, 190);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 95);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Infos meeting";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.reunionTableAdapter.ClearBeforeFill = true;
             // 
-            // button5
+            // idreunDataGridViewTextBoxColumn
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Tontine.WinForm.Properties.Resources.home_32px2;
-            this.button5.Location = new System.Drawing.Point(201, 190);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 95);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Infos meeting";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.idreunDataGridViewTextBoxColumn.DataPropertyName = "id_reun";
+            this.idreunDataGridViewTextBoxColumn.HeaderText = "id_reun";
+            this.idreunDataGridViewTextBoxColumn.Name = "idreunDataGridViewTextBoxColumn";
+            // 
+            // nomreunDataGridViewTextBoxColumn
+            // 
+            this.nomreunDataGridViewTextBoxColumn.DataPropertyName = "nom_reun";
+            this.nomreunDataGridViewTextBoxColumn.HeaderText = "nom_reun";
+            this.nomreunDataGridViewTextBoxColumn.Name = "nomreunDataGridViewTextBoxColumn";
+            // 
+            // tauxcolDataGridViewTextBoxColumn
+            // 
+            this.tauxcolDataGridViewTextBoxColumn.DataPropertyName = "taux_col";
+            this.tauxcolDataGridViewTextBoxColumn.HeaderText = "taux_col";
+            this.tauxcolDataGridViewTextBoxColumn.Name = "tauxcolDataGridViewTextBoxColumn";
+            // 
+            // nbrememDataGridViewTextBoxColumn
+            // 
+            this.nbrememDataGridViewTextBoxColumn.DataPropertyName = "nbre_mem";
+            this.nbrememDataGridViewTextBoxColumn.HeaderText = "nbre_mem";
+            this.nbrememDataGridViewTextBoxColumn.Name = "nbrememDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            // 
+            // datereunDataGridViewTextBoxColumn
+            // 
+            this.datereunDataGridViewTextBoxColumn.DataPropertyName = "date_reun";
+            this.datereunDataGridViewTextBoxColumn.HeaderText = "date_reun";
+            this.datereunDataGridViewTextBoxColumn.Name = "datereunDataGridViewTextBoxColumn";
+            // 
+            // btnNewMeeting
+            // 
+            this.btnNewMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewMeeting.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btnNewMeeting.Location = new System.Drawing.Point(573, 67);
+            this.btnNewMeeting.Name = "btnNewMeeting";
+            this.btnNewMeeting.Size = new System.Drawing.Size(90, 36);
+            this.btnNewMeeting.TabIndex = 6;
+            this.btnNewMeeting.Text = "New meeting";
+            this.btnNewMeeting.UseVisualStyleBackColor = true;
+            this.btnNewMeeting.Click += new System.EventHandler(this.btnAddMember_Click);
+            // 
+            // btnEditMeeting
+            // 
+            this.btnEditMeeting.BackColor = System.Drawing.Color.DimGray;
+            this.btnEditMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditMeeting.ForeColor = System.Drawing.Color.DeepPink;
+            this.btnEditMeeting.Location = new System.Drawing.Point(573, 132);
+            this.btnEditMeeting.Name = "btnEditMeeting";
+            this.btnEditMeeting.Size = new System.Drawing.Size(90, 36);
+            this.btnEditMeeting.TabIndex = 7;
+            this.btnEditMeeting.Text = "Edit meeting";
+            this.btnEditMeeting.UseVisualStyleBackColor = false;
+            this.btnEditMeeting.Click += new System.EventHandler(this.btnEditMeeting_Click);
+            // 
+            // btnDeleteMeeting
+            // 
+            this.btnDeleteMeeting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteMeeting.ForeColor = System.Drawing.Color.Yellow;
+            this.btnDeleteMeeting.Location = new System.Drawing.Point(573, 203);
+            this.btnDeleteMeeting.Name = "btnDeleteMeeting";
+            this.btnDeleteMeeting.Size = new System.Drawing.Size(90, 36);
+            this.btnDeleteMeeting.TabIndex = 8;
+            this.btnDeleteMeeting.Text = "Delete meeting";
+            this.btnDeleteMeeting.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.Red;
+            this.btnExit.Location = new System.Drawing.Point(573, 338);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 36);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // FrmInfoMeettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(690, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnInfoMeeting);
+            this.ClientSize = new System.Drawing.Size(690, 393);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnDeleteMeeting);
+            this.Controls.Add(this.btnEditMeeting);
+            this.Controls.Add(this.btnNewMeeting);
+            this.Controls.Add(this.lblMeetingList);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "FrmInfoMeettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmInfoMeettings";
             this.Load += new System.EventHandler(this.FrmInfoMeettings_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mutualiterDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reunionBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnInfoMeeting;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblMeetingList;
+        private MutualiterDataSet3 mutualiterDataSet3;
+        private System.Windows.Forms.BindingSource reunionBindingSource;
+        private MutualiterDataSet3TableAdapters.ReunionTableAdapter reunionTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idreunDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomreunDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tauxcolDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nbrememDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datereunDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnNewMeeting;
+        private System.Windows.Forms.Button btnEditMeeting;
+        private System.Windows.Forms.Button btnDeleteMeeting;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -201,6 +201,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxBackground);
             this.Name = "FrmSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSignUp";
             this.Load += new System.EventHandler(this.FrmSignUp_Load);
             this.panel1.ResumeLayout(false);
